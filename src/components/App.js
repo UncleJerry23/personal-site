@@ -1,6 +1,11 @@
 import React from 'react';
+import styles from './app.css';
+import SideBar from './sidebar/SideBar';
 
 export default function App() {
-  return <h1>Hello World</h1>;
+  return (
+    <section className={styles.app} >
+      <SideBar />
+    </section>
+  );
 }
-  

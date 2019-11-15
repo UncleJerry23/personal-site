@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+}
+
+body {
+  background-image: url('../../assets//birds.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: center;
+  background-position-x: center;
+}
+
+.app {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 95% 1fr;
+
+  section {
+    grid-column-start: 2;
+  }
+}
