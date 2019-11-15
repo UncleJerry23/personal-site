@@ -10,7 +10,7 @@
   &:hover {
     width: 20vw;
     transform: translate(calc(-20vw + 5vw));
-    background: red;
+    background: rgb(230, 251, 255);
 
     h2 {
       display: none;
@@ -50,9 +50,10 @@
     display: flex;
     justify-content: center;
     text-align: center;
+    align-content: center;
 
     &:hover {
-      transform: scale(1.2);
+      transform: scale(1.1);
     }
 
   }

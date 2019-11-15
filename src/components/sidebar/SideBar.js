@@ -1,9 +1,10 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styles from './sideBar.css';
 
-const SideBar = () => {
+const SideBar = ({ cssId }) => {
   return (
-    <section className={styles.sidebar}>
+    <section id={cssId} className={styles.sidebar}>
       <h2>SideBar</h2>
       <ul>
         <li>WHY IS THIS ON THE RIGHT SIDE OF THE PAGE?!?!?</li>
@@ -14,6 +15,10 @@ const SideBar = () => {
       </ul>
     </section>
   );
+};
+
+SideBar.propTypes = {
+  cssId: PropTypes.string.isRequired
 };
 
 export default SideBar;

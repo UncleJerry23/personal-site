@@ -15,8 +15,8 @@ body {
   height: 100vh;
   display: grid;
   grid-template-columns: 95% 1fr;
+}
 
-  section {
-    grid-column-start: 2;
-  }
+#sidebar {
+  grid-column-start: 2;
 }
