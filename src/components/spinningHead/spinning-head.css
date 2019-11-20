@@ -10,8 +10,9 @@
     transition: .3s ease-in-out;
     position: relative;
     left: 9em;
-    bottom: 3em;
+    bottom: 4em;
     color: white;
+    font-family: 'Calistoga', cursive;
   }
 
   .hide {

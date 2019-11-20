@@ -7,11 +7,10 @@ const SideBar = ({ cssId }) => {
     <section id={cssId} className={styles.sidebar}>
       <h2>SideBar</h2>
       <ul>
-        <li>WHY IS THIS ON THE RIGHT SIDE OF THE PAGE?!?!?</li>
-        <li>Code Stories</li>
-        <li>Projects</li>
-        <li>Me Things</li>
-        <li>Contact Info</li>
+        <li value='why'>WHY IS THIS ON THE RIGHT SIDE OF THE PAGE?!?!?</li>
+        <li value='about'>About this site</li>
+        <li value='projects'>Projects</li>
+        <li value='contact'>Contact Info</li>
       </ul>
     </section>
   );

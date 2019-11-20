@@ -1,28 +1,24 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import face from '../../../assets/face.jpg';
 import styles from './spinning-head.css';
+import { mouseOverClass, mouseOutClass } from '../../utils/addRemoveClass';
 
-const SpinningHead = () => {
+const SpinningHead = ({ cssId }) => {
   return (
-    <section className={styles['spinning-head']}>
+    <section id={cssId} className={styles['spinning-head']}>
       <img 
         src={face} 
-        onMouseOver={() => {
-          addRemoveClass('show', 'hide');
-        }}
-        onMouseOut={() => {
-          addRemoveClass('hide', 'show');
-        }}
+        onMouseOver={() => mouseOverClass(styles)}
+        onMouseOut={() => mouseOutClass(styles)}
       />
       <h2 className={styles.hide}>gee wiz thanks for stopping by</h2>
     </section>
   );
 };
 
-function addRemoveClass(add, remove) {
-  const h2 = document.querySelector(`.${styles[remove]}`);
-  h2.classList.remove(styles[remove]);
-  h2.classList.add(styles[add]);
-}
+SpinningHead.propTypes = {
+  cssId: PropTypes.string.isRequired
+};
 
 export default SpinningHead;

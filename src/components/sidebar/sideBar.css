@@ -10,7 +10,7 @@
   &:hover {
     width: 20vw;
     transform: translate(calc(-20vw + 5vw));
-    background: rgb(230, 251, 255);
+    background: rgb(178, 235, 247);
 
     h2 {
       display: none;
@@ -31,6 +31,8 @@
 
   h2 {
     transform: rotate(270deg);
+    font-size: 2em;
+    font-family: 'Calistoga', cursive;
   }
 
   ul {
@@ -51,6 +53,8 @@
     justify-content: center;
     text-align: center;
     align-content: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5em;
 
     &:hover {
       transform: scale(1.1);
