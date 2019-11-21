@@ -1,13 +1,25 @@
-import React from 'react';
-import styles from './sideBar.css';
-import { useDispatch } from 'react-redux';
+import React, { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
 import { setSelectedTab } from '../../actions/tabActions';
+import { getSelectedTab } from '../../selectors/getTab';
+import styles from './sideBar.css';
+let hasLoaded = false;
 
 const SideBar = () => {
+  const selectedTab = useSelector(getSelectedTab);
   const dispatch = useDispatch();
   const handleTabClick = (e) => {
     dispatch(setSelectedTab(e.target.value));
   };
+
+  useEffect(() => {
+    if(hasLoaded) {
+      document.querySelector(`.${styles.selected}`).className = '';
+      document.querySelector(`#label-${selectedTab}`).className = styles.selected;
+    }
+    if(!hasLoaded) hasLoaded = true;
+  }, [selectedTab]);
+
 
   return (
     <section className={styles.sidebar}>
@@ -15,19 +27,19 @@ const SideBar = () => {
 
       <div>
         <input type="radio" name="tab" id="why" value="why" onClick={handleTabClick} />
-        <label htmlFor="why" >WHY IS THIS ON THE RIGHT SIDE OF THE PAGE?!?!?</label>
+        <label id="label-why" htmlFor="why" >WHY IS THIS ON THE RIGHT SIDE OF THE PAGE?!?!?</label>
 
         <input type="radio" name="tab" id="about-me" value="about-me" onClick={handleTabClick} />
-        <label htmlFor="about-me" >About Me</label>
+        <label id="label-about-me" className={styles.selected} htmlFor="about-me" >About Me</label>
 
         <input type="radio" name="tab" id="about-site" value="about-site" onClick={handleTabClick} />
-        <label htmlFor="about-site" >About this site</label>
+        <label id="label-about-site" htmlFor="about-site" >About this site</label>
       
         <input type="radio" name="tab" id="projects" value="projects" onClick={handleTabClick} />
-        <label htmlFor="projects" >Projects</label>
+        <label id="label-projects" htmlFor="projects" >Projects</label>
       
         <input type="radio" name="tab" id="contact" value="contact" onClick={handleTabClick} />
-        <label htmlFor="contact" >Contact Info</label>
+        <label id="label-contact" htmlFor="contact" >Contact Info</label>
       </div>
     </section>
   );

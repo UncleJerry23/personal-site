@@ -66,4 +66,8 @@
     }
 
   }
+  .selected {
+    color: blue;
+  }
 }
+
