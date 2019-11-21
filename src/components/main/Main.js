@@ -15,7 +15,7 @@ const Main = () => {
       </header>
 
       <div className={styles.display}>
-        <p>{selectedTab ? info[selectedTab].text : info['about-me'].text }</p>
+        <p>{info[selectedTab].text}</p>
       </div>
 
       <footer>

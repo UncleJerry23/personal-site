@@ -12,6 +12,6 @@ export const info = {
     text: '518-222-6598'
   },
   why: {
-    text: 'cause its way cool'
+    text: 'Well, most text is always left justified in English, and when a right justified menu opens up, it neither pushes or hides the most left text. It\'s a menu style I now use in code editors and my experience has improved because of it. \n These are the things I love about UX design, thinking outside the norm to create a more better experience for the end users.'
   }
 };
