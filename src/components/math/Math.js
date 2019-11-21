@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import styles from './math.css';
-import { mouseOverClass, mouseOutClass } from '../../utils/addRemoveClass';
 import { getRandomMathFact } from '../../services/fetchMathFact';
 
 const Math = ({ cssId }) => {
@@ -9,15 +8,13 @@ const Math = ({ cssId }) => {
 
   return (
     <section id={cssId} className={styles.math}>
-      <h2 onMouseOver={() => mouseOverClass(styles)}>is math neat?</h2>
-      <p className={styles.hide} onClick={() => {
+      <h2 onClick={() => {
         getRandomMathFact()
           .then(res => {
             setFact(res);
           });
-      }}>
-        of course it is, click on me to learn something real neat
-      </p>
+      }}>is math neat?</h2>
+      
       <p>{fact}</p>
     </section>
   );

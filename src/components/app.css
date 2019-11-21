@@ -3,7 +3,7 @@
 }
 
 body {
-  background-color: black;
+  background-color: rgb(0, 0, 0);
 }
 
 .app {
@@ -14,20 +14,12 @@ body {
   overflow: hidden;
 }
 
-#sidebar {
+.sidebar {
   grid-column-start: 2;
 }
 
 .left {
   grid-row-start: 1;
-  display: grid;
-  grid-template-rows: 10% 1fr 20%;
-}
-#spinning-head {
-  grid-row-start: 1;
-}
-#math {
-  grid-row-start: 3;
 }
 
 

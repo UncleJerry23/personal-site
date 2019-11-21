@@ -1,23 +1,36 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import styles from './sideBar.css';
+import { useDispatch } from 'react-redux';
+import { setSelectedTab } from '../../actions/tabActions';
 
-const SideBar = ({ cssId }) => {
+const SideBar = () => {
+  const dispatch = useDispatch();
+  const handleTabClick = (e) => {
+    dispatch(setSelectedTab(e.target.value));
+  };
+
   return (
-    <section id={cssId} className={styles.sidebar}>
+    <section className={styles.sidebar}>
       <h2>SideBar</h2>
-      <ul>
-        <li value='why'>WHY IS THIS ON THE RIGHT SIDE OF THE PAGE?!?!?</li>
-        <li value='about'>About this site</li>
-        <li value='projects'>Projects</li>
-        <li value='contact'>Contact Info</li>
-      </ul>
+
+      <div>
+        <input type="radio" name="tab" id="why" value="why" onClick={handleTabClick} />
+        <label htmlFor="why" >WHY IS THIS ON THE RIGHT SIDE OF THE PAGE?!?!?</label>
+
+        <input type="radio" name="tab" id="about-me" value="about-me" onClick={handleTabClick} />
+        <label htmlFor="about-me" >About Me</label>
+
+        <input type="radio" name="tab" id="about-site" value="about-site" onClick={handleTabClick} />
+        <label htmlFor="about-site" >About this site</label>
+      
+        <input type="radio" name="tab" id="projects" value="projects" onClick={handleTabClick} />
+        <label htmlFor="projects" >Projects</label>
+      
+        <input type="radio" name="tab" id="contact" value="contact" onClick={handleTabClick} />
+        <label htmlFor="contact" >Contact Info</label>
+      </div>
     </section>
   );
-};
-
-SideBar.propTypes = {
-  cssId: PropTypes.string.isRequired
 };
 
 export default SideBar;
