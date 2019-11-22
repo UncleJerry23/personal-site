@@ -1,0 +1,19 @@
+.Projects {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+  li {
+    list-style: none;
+  }
+
+  a {
+    text-decoration: none;
+    color: rgb(75, 0, 136);
+
+    &:hover {
+      transform: scale(5);
+    }
+  }
+}

@@ -1,12 +1,13 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
 import { getProjects } from '../../selectors/projectSelectors';
+import styles from './projects.css'
 // import PropTypes from 'prop-types';
 
 const Projects = () => {
   const projects = useSelector(getProjects);
   return (
-    <ul>
+    <ul className={styles.Projects}>
       {projects.map(i => {
         return (
           <li key={i.id}>
