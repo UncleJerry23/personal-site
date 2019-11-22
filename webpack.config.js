@@ -1,9 +1,10 @@
 const HtmlPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+require('babel-polyfill');
 
 // eslint-disable-next-line
 module.exports = {
-  entry: './src/index.js',
+  entry: ['babel-polyfill', './src/index.js'],
   output: {
     filename: 'bundle.[hash].js',
     publicPath: '/'
