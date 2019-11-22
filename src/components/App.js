@@ -1,20 +1,50 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route
+} from 'react-router-dom';
+import { useDispatch } from 'react-redux';
 import styles from './app.css';
 import SideBar from './sidebar/SideBar';
-import Main from './main/Main';
+import AboutMe from './main/AboutMe';
+import Header from './header-footer/Header';
+import Footer from './header-footer/Footer';
+import Projects from './main/Projects';
+import { getStarredRepos } from '../actions/githubActions';
 
 export default function App() {
+  const dispatch = useDispatch();
+  dispatch(getStarredRepos());
+
 
   return (
     <section className={styles.app} >
+      <Router >
+        <section className={styles.Left}>
+          <div className={styles.Header}>
+            <Header/>
+          </div>
+        
+          <div className={styles.Main}>
+            <Switch>
+              <Route exact path="/" component={AboutMe} />
+              {/* <Route exact path="/about-site" component={AboutSite} /> */}
+              {/* <Route exact path="/sidebar" component={Sidebar} /> */}
+              <Route exact path="/projects" component={Projects} />
+              {/* <Route exact path="/contact" component={Contact} /> */}
+            </Switch>
+          </div>
 
-      <div className={styles.left}>
-        <Main />
-      </div>
+          <div className={styles.Footer}>
+            <Footer />
+          </div>
+        </section>
 
-      <div className={styles.sidebar}>
-        <SideBar />
-      </div>
+        <div className={styles.Sidebar}>
+          <SideBar />
+        </div>
+      </Router>
     </section>
   );
 }

@@ -1,48 +1,37 @@
 import React, { useEffect } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
-import { setSelectedTab } from '../../actions/tabActions';
-import { getSelectedTab } from '../../selectors/getTab';
-import styles from './sideBar.css';
-let hasLoaded = false;
 
-const SideBar = () => {
-  const selectedTab = useSelector(getSelectedTab);
-  const dispatch = useDispatch();
-  const handleTabClick = (e) => {
-    dispatch(setSelectedTab(e.target.value));
-  };
+import PropTypes from 'prop-types';
+import { Link, withRouter } from 'react-router-dom';
+import styles from './sideBar.css';
+
+const SideBar = (props) => {
+  let selected;
+  const page = props.history.location.pathname.slice(1);
+  page === '' ? selected = 'about-me' : selected = page;
 
   useEffect(() => {
-    if(hasLoaded) {
-      document.querySelector(`.${styles.selected}`).className = '';
-      document.querySelector(`#label-${selectedTab}`).className = styles.selected;
-    }
-    if(!hasLoaded) hasLoaded = true;
-  }, [selectedTab]);
-
+    const old = document.querySelector(`.${styles.selected}`);
+    if(old) old.className = '';
+    document.getElementById(selected).className = styles.selected;
+  });
 
   return (
     <section className={styles.sidebar}>
-      <h2>SideBar</h2>
+      <h2>Menu</h2>
 
       <div>
-        <input type="radio" name="tab" id="why" value="why" onClick={handleTabClick} />
-        <label id="label-why" htmlFor="why" >WHY IS THIS ON THE RIGHT SIDE OF THE PAGE?!?!?</label>
-
-        <input type="radio" name="tab" id="about-me" value="about-me" onClick={handleTabClick} />
-        <label id="label-about-me" className={styles.selected} htmlFor="about-me" >About Me</label>
-
-        <input type="radio" name="tab" id="about-site" value="about-site" onClick={handleTabClick} />
-        <label id="label-about-site" htmlFor="about-site" >About this site</label>
-      
-        <input type="radio" name="tab" id="projects" value="projects" onClick={handleTabClick} />
-        <label id="label-projects" htmlFor="projects" >Projects</label>
-      
-        <input type="radio" name="tab" id="contact" value="contact" onClick={handleTabClick} />
-        <label id="label-contact" htmlFor="contact" >Contact Info</label>
+        <Link id="about-me" to="/">About Me</Link>
+        <Link id="about-site" to="/about-site">About this site</Link>
+        <Link id="sidebar" to="/sidebar">WHY IS THIS ON THE RIGHT SIDE OF THE PAGE?!?!?</Link>
+        <Link id="projects" to="/projects">Projects</Link>
+        <Link id="contact" to="/contact">Contact Info</Link>
       </div>
     </section>
   );
 };
 
-export default SideBar;
+SideBar.propTypes = {
+  history: PropTypes.object.isRequired
+};
+
+export default withRouter(SideBar);

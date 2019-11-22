@@ -1,14 +1,13 @@
 export const setSelectedTab = 'SET_SELECTED_TAB';
+import { thoughtActions } from './reducerHelpers';
 
 const initialState = {
-  selectedTab: 'about-me'
+  projects: [],
+  err: {},
+  loading: false
 };
 
 export default function reducer(state = initialState, action) {
-  switch(action.type) {
-    case setSelectedTab:
-      return { selectedTab: action.payload };
-    default:
-      return state;
-  }
+  const transformer = thoughtActions[action.type] || (() => state);
+  return transformer(state, action);
 }

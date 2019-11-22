@@ -1,0 +1,24 @@
+.Header {
+  
+  display: flex;
+  align-items: center;
+
+  h1 {
+    color: rgb(29, 29, 29);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 4em;
+    margin-left: .6em;
+
+    &:hover {
+      animation: changeColor 3s linear infinite;
+    }
+  }
+
+  span {
+    color: purple;
+    font-size: 4em;
+    display: flex;
+    align-items: center;
+    margin-left: .3em;
+  }
+}

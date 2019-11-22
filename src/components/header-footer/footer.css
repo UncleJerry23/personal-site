@@ -1,0 +1,13 @@
+.Footer {
+  display: flex;
+  align-items: flex-end;
+
+  span {
+    color: purple;
+    font-size: 4em;
+    display: flex;
+    align-items: center;
+    margin-left: .3em;
+    margin-bottom: .2em;
+  }
+}
