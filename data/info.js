@@ -3,7 +3,7 @@ export const info = {
     text: 'An avid life long learner, starting a career in software development. I get excited about finding simple solutions to tough problems and gain energy working on energetic and open-minded teams! I\'m looking for a challenging career in technology that makes a positive impact on the world.'
   },
   ['about-site']: {
-    text: 'about me and stuff'
+    text: 'This site was built using a React and hosted in an AWS S3 bucket. The sidebar was made with vanilla Javascript and CSS, the projects page is dynamically rendered by fetching my starred repositories on GitHub'
   },
   projects: {
     text: 'about my projects'
@@ -12,6 +12,6 @@ export const info = {
     text: '518-222-6598'
   },
   why: {
-    text: 'Well, most text is always left justified in English, and when a right justified menu opens up, it neither pushes or hides the most left text. It\'s a menu style I now use in code editors and my experience has improved because of it. \n These are the things I love about UX design, thinking outside the norm to create a more better experience for the end users.'
+    text: 'Please open and close the side bar. Notice how when the menu opens and closes the main text on the page is neither covered up nor pushed, and therefore less distracting and disorienting. Thats basically why.'
   }
 };

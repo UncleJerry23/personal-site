@@ -11,12 +11,14 @@ import AboutMe from './main/AboutMe';
 import Header from './header-footer/Header';
 import Footer from './header-footer/Footer';
 import Projects from './main/Projects';
+import AboutSite from './main/AboutSite';
+import Why from './main/Why';
+import Contact from './main/Contact';
 import { getStarredRepos } from '../actions/githubActions';
 
 export default function App() {
   const dispatch = useDispatch();
   dispatch(getStarredRepos());
-
 
   return (
     <section className={styles.app} >
@@ -29,10 +31,10 @@ export default function App() {
           <div className={styles.Main}>
             <Switch>
               <Route exact path="/" component={AboutMe} />
-              {/* <Route exact path="/about-site" component={AboutSite} /> */}
-              {/* <Route exact path="/sidebar" component={Sidebar} /> */}
+              <Route exact path="/about-site" component={AboutSite} />
+              <Route exact path="/why" component={Why} />
               <Route exact path="/projects" component={Projects} />
-              {/* <Route exact path="/contact" component={Contact} /> */}
+              <Route exact path="/contact" component={Contact} />
             </Switch>
           </div>
 
