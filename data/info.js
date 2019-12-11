@@ -1,9 +1,9 @@
 export const info = {
   ['about-me']: {
-    learner: 'learner of things',
+    learner: 'questioner of ideas',
     creator: 'maker of things',
-    adventurer: 'adventurer of places',
-    nerd: 'passion for things'
+    adventurer: 'goer of places',
+    nerd: 'enthusiast of the neat'
   },
   ['about-site']: {
     text: 'This site was built using a React and hosted in an AWS S3 bucket. The sidebar was made with vanilla Javascript and CSS, the projects page is dynamically rendered by fetching my starred repositories on GitHub'
