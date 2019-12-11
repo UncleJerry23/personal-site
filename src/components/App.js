@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import {
   BrowserRouter as Router,
   Switch,
@@ -9,7 +9,6 @@ import styles from './app.css';
 import SideBar from './sidebar/SideBar';
 import AboutMe from './main/AboutMe';
 import Header from './header-footer/Header';
-import Footer from './header-footer/Footer';
 import Projects from './main/Projects';
 import AboutSite from './main/AboutSite';
 import Why from './main/Why';
@@ -38,9 +37,6 @@ export default function App() {
             </Switch>
           </div>
 
-          <div className={styles.Footer}>
-            <Footer />
-          </div>
         </section>
 
         <div className={styles.Sidebar}>

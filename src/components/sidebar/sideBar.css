@@ -11,7 +11,7 @@
   &:hover {
     width: 20vw;
     transform: translate(calc(-20vw + 5vw));
-    background: rgb(255, 234, 45);
+    background: rgb(216, 194, 0);
 
     h2 {
       display: none;

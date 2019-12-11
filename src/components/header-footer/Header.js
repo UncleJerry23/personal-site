@@ -17,10 +17,7 @@ const Header = () => {
 
   return (
     <header className={styles.Header} >
-      <div>
-        <h1>jared-Myhrberg: </h1>
-        <span>&#123;</span>
-      </div>
+      <h1>jared-Myhrberg</h1>
       <h3>&gt; {header[location]}</h3>
     </header>
   );

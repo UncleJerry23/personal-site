@@ -4,19 +4,21 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 3em;
   
   section {
-    height: 90vh;
-    width: 120vh;
+    height: 60vh;
+    width: 80vh;
     margin: 1em;
     
 
     div {
       position: relative;
-      top: 2em;
-      left: 2em;
+      top: 1em;
+      left: 1em;
       color: white;
       font-size: 2.5em;
+      color: white;
     }
   }
 

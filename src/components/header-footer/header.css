@@ -6,21 +6,20 @@
   60% { color: #0000FF}
   75% { color: #2E2B5F}
   90% { color: #8B00FF}
-  100% { color: black}
+  100% { color: white}
 }
 
 
 .Header {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  flex-direction: column;
 
   div {
     display: flex;
   }
 
   h1 {
-    color: rgb(29, 29, 29);
+    color: rgb(255, 255, 255);
     font-family: 'Open Sans', sans-serif;
     font-size: 4em;
     margin-left: .6em;
@@ -30,16 +29,8 @@
     }
   }
 
-  span {
-    color: purple;
-    font-size: 4em;
-    display: flex;
-    align-items: center;
-    margin-left: .3em;
-  }
-
   h3 {
-    margin-right: 2em;
+    margin-left: 2em;
     font-size: 2em;
     color: rgb(143, 141, 141);
   }

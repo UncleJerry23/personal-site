@@ -1,10 +1,6 @@
 import React from 'react';
 import styles from './about-me.css';
 import { info } from '../../../data/info';
-import balloon from '../../../assets/balloon.jpg';
-import creator from '../../../assets/creator.jpg';
-import adventure from '../../../assets/adventure.jpg';
-import nerd from '../../../assets/nerd.jpg';
 
 const images = {
   balloon: '../../../assets/balloon.jpg',

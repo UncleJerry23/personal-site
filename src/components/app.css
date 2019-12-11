@@ -8,6 +8,7 @@
   width: 100vw;
   display: grid;
   grid-template-columns: 95% 1fr;
+  background: rgb(0, 0, 0);
 }
 
 .Sidebar {
@@ -18,7 +19,7 @@
   height: 100vh;
   grid-row-start: 1;
   display: grid;
-  grid-template-rows: 13% 1fr 10%;
+  grid-template-rows: 15% 1fr;
   overflow: scroll;
 }
 

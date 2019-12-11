@@ -6,6 +6,7 @@ export const fetchStarredRepos = async() => {
       return json;
     })
     .then(starred => {
+      console.log(starred[0]);
       return Promise.all(starred.map(i => {
         return {
           url: i.html_url,
