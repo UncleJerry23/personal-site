@@ -1,8 +1,7 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
 import { getProjects } from '../../selectors/projectSelectors';
-import styles from './projects.css'
-// import PropTypes from 'prop-types';
+import styles from './projects.css';
 
 const Projects = () => {
   const projects = useSelector(getProjects);

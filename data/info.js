@@ -1,6 +1,6 @@
 export const info = {
   ['about-me']: {
-    learner: 'questioner of ideas',
+    learner: 'inquirer of ideas',
     creator: 'maker of things',
     adventurer: 'goer of places',
     nerd: 'enthusiast of the neat'

@@ -20,6 +20,7 @@
   grid-row-start: 1;
   display: grid;
   grid-template-rows: 13% 1fr 10%;
+  overflow: scroll;
 }
 
 .Header {
