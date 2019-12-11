@@ -1,7 +1,23 @@
+@keyframes rainbow-color {
+  0% { color: #FF0000}
+  15% { color: #FF7F00}
+  30% { color: #FFFF00}
+  45% { color: #00FF00}
+  60% { color: #0000FF}
+  75% { color: #2E2B5F}
+  90% { color: #8B00FF}
+  100% { color: black}
+}
+
+
 .Header {
-  
   display: flex;
   align-items: center;
+  justify-content: space-between;
+
+  div {
+    display: flex;
+  }
 
   h1 {
     color: rgb(29, 29, 29);
@@ -10,7 +26,7 @@
     margin-left: .6em;
 
     &:hover {
-      animation: changeColor 3s linear infinite;
+      animation: rainbow-color 5s linear infinite;
     }
   }
 
@@ -20,5 +36,11 @@
     display: flex;
     align-items: center;
     margin-left: .3em;
+  }
+
+  h3 {
+    margin-right: 2em;
+    font-size: 2em;
+    color: rgb(143, 141, 141);
   }
 }
