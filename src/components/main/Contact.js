@@ -21,12 +21,14 @@ const Contact = () => {
       </section>
 
       <div>
-        <p>
+        <div>
+          <p>
           If you&rsquo;d like to hire me for a software position, commission a rad woodworking project or for any other reason please feel free to email me or message me on LinkedIn by using the links to the left.
-        </p>
-        <p>
+          </p>
+          <p>
           Thanks for stopping by!
-        </p>
+          </p>
+        </div>
       </div>
     </div>
   );

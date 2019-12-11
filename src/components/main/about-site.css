@@ -5,8 +5,18 @@
   align-items: center;
   margin-left: 3em;
 
-  p {
-    color: rgb(29, 29, 29);
-    font-size: 2.5em;
+  section {
+    height: 60%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    
+    p {
+      width: 80%;
+      color: rgb(166, 255, 218);
+      font-size: 2.2em;
+    }
   }
 }
