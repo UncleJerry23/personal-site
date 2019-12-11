@@ -11,7 +11,6 @@ const SideBar = (props) => {
   
   useEffect(() => {
     const old = document.querySelector(`.${styles.selected}`);
-    console.log(selected, document.getElementById(selected));
     if(old) old.className = '';
     document.getElementById(selected).className = styles.selected;
   });
