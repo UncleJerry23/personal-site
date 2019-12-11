@@ -6,46 +6,47 @@ import creator from '../../../assets/creator.jpg';
 import adventure from '../../../assets/adventure.jpg';
 import nerd from '../../../assets/nerd.jpg';
 
+const images = {
+  balloon: '../../../assets/balloon.jpg',
+  creator: '../../../assets/creator.jpg',
+  adventure: '../../../assets/adventure.jpg',
+  nerd: '../../../assets/nerd.jpg'
+};
+
+const background = (img) => ({
+  backgroundImage: `url(${img})`,
+  backgroundSize: 'contain',
+  backgroundRepeat: 'no-repeat'
+});
+
 const AboutMe = () => {
 
   return (
     <div className={styles['About-Me']}>
-      <section>
-        <figure>
-          <img src={balloon} />
-        </figure>
+      <section style={background(images.balloon)}>
         <div>
-          <h3>Learner</h3>
+          <h3>Learner:</h3>
           <p>{info['about-me'].learner}</p>
         </div>
       </section>
 
-      <section>
-        <figure>
-          <img src={creator} />
-        </figure>
+      <section style={background(images.creator)}>
         <div>
-          <h3>Creator</h3>
+          <h3>Creator:</h3>
           <p>{info['about-me'].creator}</p>
         </div>
       </section>
 
-      <section>
-        <figure>
-          <img src={adventure} />
-        </figure>
+      <section style={background(images.adventure)}>
         <div>
-          <h3>Adventurer</h3>
+          <h3>Adventurer:</h3>
           <p>{info['about-me'].adventurer}</p>
         </div>
       </section>
 
-      <section>
-        <figure>
-          <img src={nerd} />
-        </figure>
+      <section style={background(images.nerd)}>
         <div>
-          <h3>Nerd</h3>
+          <h3>Nerd:</h3>
           <p>{info['about-me'].nerd}</p>
         </div>
       </section>
