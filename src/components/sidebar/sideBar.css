@@ -37,6 +37,15 @@
     color: rgb(255, 0, 179);
   }
 
+  @keyframes yellower {
+    0% {color: rgb(233, 255, 34);}
+    100% {color: rgb(255, 0, 179);}
+  }
+  
+  .Yellower {
+    animation: yellower 3s ease-in-out;
+  }
+
   div {
     height: 100%;
     width: 100%;

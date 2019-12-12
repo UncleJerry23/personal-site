@@ -1,7 +1,8 @@
 import React, { useEffect } from 'react';
-
 import PropTypes from 'prop-types';
+import { useSelector } from 'react-redux';
 import { Link, withRouter } from 'react-router-dom';
+import { getVisited } from '../../selectors/siteSelectors';
 import styles from './sideBar.css';
 
 const SideBar = (props) => {
@@ -9,6 +10,9 @@ const SideBar = (props) => {
   const page = props.history.location.pathname.slice(1);
   page === '' ? selected = 'home' : selected = page;
   
+  const didVisit = useSelector(getVisited);
+  let menuColor = didVisit ? '' : 'Yellower';
+
   useEffect(() => {
     const old = document.querySelector(`.${styles.selected}`);
     if(old) old.className = '';
@@ -17,7 +21,7 @@ const SideBar = (props) => {
 
   return (
     <section className={styles.sidebar}>
-      <h2>Menu</h2>
+      <h2 className={styles[menuColor]}>Menu</h2>
 
       <div>
         <Link id="home" to="/">Home</Link>

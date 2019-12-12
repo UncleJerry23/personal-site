@@ -1,6 +1,6 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
-import { getProjects } from '../../selectors/projectSelectors';
+import { getProjects } from '../../selectors/siteSelectors';
 import styles from './projects.css';
 
 const images = {

@@ -14,11 +14,16 @@ import AboutSite from './main/AboutSite';
 import Why from './main/Why';
 import Contact from './main/Contact';
 import { getStarredRepos } from '../actions/githubActions';
+import { didVisit } from '../actions/siteActions';
 import Splash from './main/Splash';
 
 export default function App() {
   const dispatch = useDispatch();
   dispatch(getStarredRepos());
+
+  setTimeout(() => {
+    dispatch(didVisit());
+  }, 3000);
 
   return (
     <section className={styles.app} >
