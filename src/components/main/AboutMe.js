@@ -12,7 +12,8 @@ const images = {
 const background = (img) => ({
   backgroundImage: `url(${img})`,
   backgroundSize: 'contain',
-  backgroundRepeat: 'no-repeat'
+  backgroundRepeat: 'no-repeat',
+  backgroundPositionX: 'center'
 });
 
 const AboutMe = () => {

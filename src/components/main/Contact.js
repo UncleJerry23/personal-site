@@ -7,7 +7,7 @@ import linkedin from '../../../assets/linkedin.png';
 const Contact = () => {
   return (
     <div className={styles.Contact}>
-      <section>
+      <section className={styles.Icons}>
         <a href="https://github.com/UncleJerry23" target="blank">
           <img src={github} />
         </a>
@@ -19,7 +19,7 @@ const Contact = () => {
         </a>
       </section>
 
-      <div>
+      <section className={styles.Details}>
         <div>
           <p>
           If you&rsquo;d like to hire me for a software position, commission a rad woodworking project or for any other reason please feel free to email me or message me on LinkedIn by using the links to the left.
@@ -28,7 +28,7 @@ const Contact = () => {
           Thanks for stopping by!
           </p>
         </div>
-      </div>
+      </section>
     </div>
   );
 };
