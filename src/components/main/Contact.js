@@ -3,6 +3,7 @@ import styles from './contact.css';
 import github from '../../../assets/github.png';
 import email from '../../../assets/mail.png';
 import linkedin from '../../../assets/linkedin.png';
+import resume from '../../../assets/resume.png';
 
 const Contact = () => {
   return (
@@ -16,6 +17,9 @@ const Contact = () => {
         </a>
         <a href="mailto:jared.myhrberg@gmail.com" target="blank">
           <img src={email} />
+        </a>
+        <a href="https://drive.google.com/open?id=1mfSk1e2lTASVQ1rfr59qsNAjkAOIB2lA" target="blank">
+          <img src={resume} />
         </a>
       </section>
 
