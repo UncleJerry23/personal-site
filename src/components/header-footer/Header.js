@@ -1,5 +1,5 @@
 import React from 'react';
-import { useHistory } from 'react-router-dom';
+import { useHistory, Link } from 'react-router-dom';
 import styles from './header.css';
 
 const header = {
@@ -18,7 +18,9 @@ const Header = () => {
 
   return (
     <header className={styles.Header} >
-      <h1>jared-Myhrberg</h1>
+      <Link to="/">
+        <h1>jared-Myhrberg</h1>
+      </Link>
       <h3>&gt; {header[location]}</h3>
     </header>
   );
