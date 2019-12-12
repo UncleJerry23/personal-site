@@ -17,7 +17,7 @@ const Projects = () => {
         return (
           <li key={i.id}>
             <div>
-              <img src={images[i.name]} />
+              <img src={images[i.name] || 'https://i.imgur.com/IWhPTlk.jpg'} />
             </div>
             <section>
               <a href={i.url} target="_blank" rel="noopener noreferrer" >

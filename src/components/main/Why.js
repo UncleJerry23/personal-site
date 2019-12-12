@@ -1,11 +1,10 @@
 import React from 'react';
 import styles from './why.css';
-import { info } from '../../../data/info';
 
 const Why = () => {
   return (
     <section className={styles['Why']}>
-      <p>{info['why'].text}</p>
+      <p>Unlike more traditional left side menus, on expansion, this menu doesn&rsquo;t push text, and hides very little to none of the content on the screen. Which leads to a screen that remains more readable, and less jerky.</p>
     </section>
   );
 };
