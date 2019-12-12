@@ -3,10 +3,10 @@ import styles from './about-me.css';
 import { info } from '../../../data/info';
 
 const images = {
-  leaner: '../../../assets/leaner.jpg',
-  creator: '../../../assets/creator.jpg',
-  adventure: '../../../assets/adventure.jpg',
-  nerd: '../../../assets/nerd.jpg'
+  leaner: 'https://i.imgur.com/3HSkWqG.jpg',
+  creator: 'https://i.imgur.com/6sAjKQp.jpg',
+  adventure: 'https://i.imgur.com/BZ87R5w.jpg',
+  nerd: 'https://i.imgur.com/XH4LDbp.jpg'
 };
 
 const background = (img) => ({
