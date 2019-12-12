@@ -14,6 +14,7 @@ import AboutSite from './main/AboutSite';
 import Why from './main/Why';
 import Contact from './main/Contact';
 import { getStarredRepos } from '../actions/githubActions';
+import Test from './main/Test';
 
 export default function App() {
   const dispatch = useDispatch();
@@ -29,7 +30,8 @@ export default function App() {
         
           <div className={styles.Main}>
             <Switch>
-              <Route exact path="/" component={AboutMe} />
+              <Route exact path="/" component={Test} />
+              <Route exact path="/about-me" component={AboutMe} />
               <Route exact path="/about-site" component={AboutSite} />
               <Route exact path="/why" component={Why} />
               <Route exact path="/projects" component={Projects} />

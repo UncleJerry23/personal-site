@@ -3,7 +3,8 @@ import { useHistory } from 'react-router-dom';
 import styles from './header.css';
 
 const header = {
-  ['']: 'Who is he?',
+  ['']: 'Home',
+  ['about-me']: 'Who am I?',
   ['about-site']: 'About this site',
   ['why']: 'Right Side Menu??',
   ['projects']: 'His Works',

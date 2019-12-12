@@ -7,7 +7,7 @@ import styles from './sideBar.css';
 const SideBar = (props) => {
   let selected = 'about-me';
   const page = props.history.location.pathname.slice(1);
-  page === '' ? selected = 'about-me' : selected = page;
+  page === '' ? selected = 'home' : selected = page;
   
   useEffect(() => {
     const old = document.querySelector(`.${styles.selected}`);
@@ -20,7 +20,8 @@ const SideBar = (props) => {
       <h2>Menu</h2>
 
       <div>
-        <Link id="about-me" to="/">About Me</Link>
+        <Link id="home" to="/">Home</Link>
+        <Link id="about-me" to="/about-me">About Me</Link>
         <Link id="about-site" to="/about-site">About this site</Link>
         <Link id="why" to="/why">WHY IS THIS ON THE RIGHT SIDE OF THE PAGE?!?!?</Link>
         <Link id="projects" to="/projects">Projects</Link>

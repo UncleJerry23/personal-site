@@ -3,7 +3,6 @@ import styles from './contact.css';
 import github from '../../../assets/github.png';
 import email from '../../../assets/mail.png';
 import linkedin from '../../../assets/linkedin.png';
-// import face from '../../../assets/face.jpg';
 
 const Contact = () => {
   return (
@@ -35,8 +34,3 @@ const Contact = () => {
 };
 
 export default Contact;
-
-
-{/* <a href="https://drive.google.com/file/d/1LsmfQAmLWltdzJFwCH5PdCBtl6EiKkOT/view" target="blank">
-<img src={face} />
-</a> */}

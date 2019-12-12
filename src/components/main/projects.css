@@ -5,21 +5,28 @@
   justify-content: space-around;
   overflow: scroll;
   margin-top: 3em;
+  padding: 0;
 
   li {
     list-style: none;
     height: 30vh;
     margin: 2em;
-    display: flex;
+    display: grid;
+    grid-auto-columns: 20% 1fr;
+    background: rgba(21, 24, 21, 0.829);
+    border-radius: .5em;
+    box-shadow: 2px 4px rgb(19, 22, 19);
 
     div {
       display: flex;
       justify-content: center;
       align-items: center;
       width: 18em;
+
     }
 
     section {
+      grid-column-start: 2;
       margin-left: 8em;
       display: grid;
       grid-template-rows: 30% 1fr;
@@ -33,6 +40,7 @@
   a {
     text-decoration: none;
     color: rgb(236, 16, 189);
+    text-shadow: 2px 2px rgb(20, 20, 20);
   }
 
   h2 {

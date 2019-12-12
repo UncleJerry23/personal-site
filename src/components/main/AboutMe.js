@@ -3,7 +3,7 @@ import styles from './about-me.css';
 import { info } from '../../../data/info';
 
 const images = {
-  balloon: '../../../assets/balloon.jpg',
+  leaner: '../../../assets/leaner.jpg',
   creator: '../../../assets/creator.jpg',
   adventure: '../../../assets/adventure.jpg',
   nerd: '../../../assets/nerd.jpg'
@@ -19,7 +19,7 @@ const AboutMe = () => {
 
   return (
     <div className={styles['About-Me']}>
-      <section style={background(images.balloon)}>
+      <section style={background(images.leaner)}>
         <div>
           <h3>Learner:</h3>
           <p>{info['about-me'].learner}</p>

@@ -8,7 +8,9 @@
   width: 100vw;
   display: grid;
   grid-template-columns: 95% 1fr;
-  background: rgb(0, 0, 0);
+  background-image: url('../../assets/mountain.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .Sidebar {
@@ -19,7 +21,7 @@
   height: 100vh;
   grid-row-start: 1;
   display: grid;
-  grid-template-rows: 15% 1fr;
+  grid-template-rows: 13% 1fr;
   overflow: scroll;
 }
 
