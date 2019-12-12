@@ -4,9 +4,9 @@ import { getProjects } from '../../selectors/projectSelectors';
 import styles from './projects.css';
 
 const images = {
-  ['horse-game']: '../../../assets/unicorn-5.png',
-  ['push-pin-backend']: '../../../assets/pushpin.png',
-  ['quick-grades']: '../../../assets/scorpion.png'
+  ['horse-game']: 'https://i.imgur.com/ZvxpAIv.png',
+  ['push-pin-backend']: 'https://i.imgur.com/9Mtn7n9.png',
+  ['quick-grades']: 'https://i.imgur.com/Pxtx3DK.png'
 };
 
 const Projects = () => {
