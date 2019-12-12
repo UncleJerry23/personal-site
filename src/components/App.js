@@ -23,7 +23,7 @@ export default function App() {
 
   setTimeout(() => {
     dispatch(didVisit());
-  }, 3000);
+  }, 5000);
 
   return (
     <section className={styles.app} >
