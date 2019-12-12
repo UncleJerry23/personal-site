@@ -17,9 +17,10 @@
     background: rgba(21, 24, 21, 0.9);
 
     div {
-      position: relative;
-      bottom: 6em;
-      right: 6em;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
       color: white;
       font-size: 2.5em;
       color: white;

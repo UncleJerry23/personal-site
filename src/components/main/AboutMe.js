@@ -20,17 +20,17 @@ const AboutMe = () => {
 
   return (
     <div className={styles['About-Me']}>
-      <section style={background(images.leaner)}>
-        <div>
-          <h3>Learner:</h3>
-          <p>{info['about-me'].learner}</p>
-        </div>
-      </section>
-
       <section style={background(images.creator)}>
         <div>
           <h3>Creator:</h3>
           <p>{info['about-me'].creator}</p>
+        </div>
+      </section>
+
+      <section style={background(images.leaner)}>
+        <div>
+          <h3>Learner:</h3>
+          <p>{info['about-me'].learner}</p>
         </div>
       </section>
 
