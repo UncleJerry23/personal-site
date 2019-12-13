@@ -50,3 +50,41 @@
     }
   }
 }
+
+@media screen and (max-width: 600px) {
+  .About-Site {
+    display: grid;
+    grid-auto-columns: 18% 1fr;
+  }
+
+  .Icons {
+
+    img {
+      height: 3em;
+      margin: 1em;
+    }
+  }
+
+  .Details {
+    section {
+      height: 70%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      
+      div {
+        width: 70%;
+        background: rgba(21, 24, 21, 0.829);
+        border-radius: .5em;
+        box-shadow: 2px 4px rgb(19, 22, 19);
+        margin: 1em;
+        padding: 1.5em;
+        
+        p {
+          font-size: 1.2em;
+        }
+      }
+    }
+  }
+}
