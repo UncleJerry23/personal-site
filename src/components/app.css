@@ -43,7 +43,10 @@
     flex-direction: column;
     background-image: url('https://i.imgur.com/cWpw58I.jpg');
     background-position-x: 40%;
-
+  }
+  .Left {
+    display: grid;
+    grid-template-rows: 12% 1fr;
   }
 }
 
