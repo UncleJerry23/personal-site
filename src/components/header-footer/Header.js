@@ -17,12 +17,19 @@ const Header = () => {
   let location = history.location.pathname.slice(1);
 
   return (
-    <header className={styles.Header} >
-      <Link to="/">
-        <h1>jared-Myhrberg</h1>
-      </Link>
-      <h3>&gt; {header[location]}</h3>
-    </header>
+    <div className={styles['Header-Container']}>
+      <header className={styles.Header} >
+        <Link to="/">
+          <h1>jared-Myhrberg</h1>
+        </Link>
+        <h3>&gt; {header[location]}</h3>
+      </header>
+      <section className={styles.Burger}>
+        <div className={styles['Burger-Slice']}></div>
+        <div className={styles['Burger-Slice']}></div>
+        <div className={styles['Burger-Slice']}></div>
+      </section>
+    </div>
   );
 };
 
