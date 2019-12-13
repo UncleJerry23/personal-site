@@ -4,7 +4,6 @@
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-
   margin-top: 3em;
   padding: 0;
 
@@ -13,53 +12,93 @@
     width: 70%;
     margin: 2em;
     display: grid;
-    grid-auto-columns: 20% 1fr;
+    grid-template-columns: 20% 1fr;
     background: rgba(21, 24, 21, 0.829);
     border-radius: .5em;
     box-shadow: 4px 4px rgb(19, 22, 19);
+  }
+}
 
-    div {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 18em;
+.Image-Container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 18em;
 
-      img {
-        height: 12em;
+  img {
+    height: 12em;
+  }
+}
+
+.Details-Container {
+  grid-column-start: 2;
+  margin-left: 8em;
+  display: grid;
+  grid-template-rows: 30% 1fr;
+
+  a {
+      text-decoration: none;
+      color: rgb(106, 168, 142);
+      text-shadow: 2px 2px rgb(20, 20, 20);
+      
+      h2 {
+        font-size: 2em;
+        margin-top: 1em;
+        margin-bottom: 1em;
+    
+        &:hover {
+          transform: scaleY(1.1);
+        }
       }
     }
 
-    section {
-      grid-column-start: 2;
-      margin-left: 8em;
-      display: grid;
-      grid-template-rows: 30% 1fr;
- 
-      a {
-          text-decoration: none;
-          color: rgb(106, 168, 142);
-          text-shadow: 2px 2px rgb(20, 20, 20);
-          
-          h2 {
-            font-size: 2em;
-            margin-top: 1em;
-            margin-bottom: 1em;
-        
-            &:hover {
-              transform: scaleY(1.1);
-            }
-          }
-        }
+  p {
+    width: 90%;
+    font-size: 1.5em;
+    color: rgb(166, 255, 218);
+    display: flex;
+    align-items: center;
+  }
+}
 
-      p {
-        width: 90%;
-        font-size: 1.5em;
-        color: rgb(166, 255, 218);
-        display: flex;
-        align-items: center;
-      }
+
+@media screen and (max-width: 600px) {
+  .Projects {
+    li {
+      display: grid;
+      grid-template-rows: 6em;
+      grid-template-columns: 1fr;
+      flex-grow: 1;
+      margin: .8em;
     }
   }
+  .Image-Container {
+    grid-column-start: 1;
+    grid-row-start: 1;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  
+    img {
+      height: 5em;
+    }
+  }
+  .Details-Container {
+    grid-column-start: 1;
+    grid-row-start: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+    height: auto;
 
-
+    a {
+      h2 {
+        margin: .2em;
+      }
+    }
+    p {
+      padding: .5em;
+    }
+  }
 }

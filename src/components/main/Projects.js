@@ -16,15 +16,18 @@ const Projects = () => {
       {projects.map(i => {
         return (
           <li key={i.id}>
-            <div>
+
+            <section className={styles['Image-Container']}>
               <img src={images[i.name] || 'https://i.imgur.com/IWhPTlk.jpg'} />
-            </div>
-            <section>
+            </section>
+
+            <section className={styles['Details-Container']}>
               <a href={i.url} target="_blank" rel="noopener noreferrer" >
                 <h2>{i.name}</h2>
               </a>
               <p>{i.description}</p>
             </section>
+            
           </li>
         );
       })}
