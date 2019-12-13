@@ -28,3 +28,19 @@
     }
   }
 }
+
+@media screen and (max-width: 600px) {
+  .About-Me {
+    section {
+      width: 70%;
+      height: 11em;
+      border: 1em solid rgba(21, 24, 21, 0.6);
+
+
+      div {
+        font-size: 1em;
+      }
+    }
+
+  }
+}
