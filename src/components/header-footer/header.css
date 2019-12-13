@@ -49,10 +49,78 @@
 }
 
 .Burger-Slice {
-  height: .5em;
+  height: .3em;
   width: 2em;
-  background: black;
+  background: rgb(255, 0, 179);
   margin: .1em;
+}
+
+.Menu {
+  position: absolute;
+  background: yellow;
+  height: 90vh;
+  width: 70vw;
+  bottom: 0;
+  right: 0;
+  animation: openMenu .4s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  z-index: 1;
+
+  a {
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5em;
+    text-decoration: none;
+    color: black;
+
+  }
+  .selected {
+    color: blue;
+  }
+}
+
+.Pointer {
+  position: absolute;
+  top: 9vh;
+  right: 6vw;
+  background: yellow;
+  height: 1em;
+  width: 1em;
+  transform: rotate(45deg);
+  animation: showArrow .4s ease-in-out;
+}
+
+.Close {
+  display: none;
+}
+
+@keyframes openMenu {
+  0% {
+    width: 70vw;
+    bottom: 0;
+    right: -80vw;
+  }
+  100% {
+    width: 70vw;
+    bottom: 0;
+    right: 0;
+  }
+}
+
+@keyframes showArrow {
+  0% {
+    right: -70vw;
+  }
+  100% {
+    right: 6vw;
+  }
 }
 
 

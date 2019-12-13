@@ -5,9 +5,9 @@ import { Link, withRouter } from 'react-router-dom';
 import { getVisited } from '../../selectors/siteSelectors';
 import styles from './sideBar.css';
 
-const SideBar = (props) => {
+const SideBar = ({ history }) => {
   let selected = 'about-me';
-  const page = props.history.location.pathname.slice(1);
+  const page = history.location.pathname.slice(1);
   page === '' ? selected = 'home' : selected = page;
   
   const didVisit = useSelector(getVisited);
