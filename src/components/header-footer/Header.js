@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
+import { useSideBar } from '../../hooks/useSideBar';
 import PropTypes from 'prop-types';
 import { Link, withRouter } from 'react-router-dom';
 import styles from './header.css';
@@ -14,21 +15,13 @@ const header = {
 
 
 const Header = ({ history }) => {
-  let selected = 'about-me';
-  let location = history.location.pathname.slice(1);
-  location === '' ? selected = 'home' : selected = location;
-
   const [isOpen, setOpen] = useState(false);
 
   const open = () =>setOpen(true);
   const close = () =>setOpen(false);
   const toggleMenu = () => isOpen ? close() : open();
 
-  useEffect(() => {
-    const old = document.querySelector(`.${styles.selected}`);
-    if(old) old.className = '';
-    document.getElementById(selected).className = styles.selected;
-  });
+  useSideBar(styles, history);
 
   return (
     <div className={styles['Header-Container']}>
@@ -36,7 +29,7 @@ const Header = ({ history }) => {
         <Link to="/">
           <h1>jared-Myhrberg</h1>
         </Link>
-        <h3>&gt; {header[location]}</h3>
+        <h3>&gt; {header[history.location.pathname.slice(1)]}</h3>
       </header>
 
       <section className={styles.Burger} onClick={toggleMenu}>

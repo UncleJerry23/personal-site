@@ -7,14 +7,14 @@
   
   section {
     height: 80vh;
-    width: 120vh;
+    width: 110vh;
     margin: 1em;
     display: flex;
     justify-content: center;
     align-items: center;
     box-shadow: 2px 2px black;
-    border: 2em solid rgba(21, 24, 21, 0.6);
-    background: rgba(21, 24, 21, 0.9);
+    border: 2em solid rgb(21, 24, 21);
+    background: rgb(21, 24, 21);
 
     div {
       display: flex;

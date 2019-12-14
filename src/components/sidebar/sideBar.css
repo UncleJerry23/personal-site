@@ -1,4 +1,4 @@
-.sidebar {
+.Sidebar {
   height: 100vh;
   width: 5vw;
   background: rgb(26, 26, 26);
@@ -7,6 +7,13 @@
   align-items: center;
   transition: 1s ease-in;
   transition: .3s ease-out;
+
+  h2 {
+    transform: rotate(270deg);
+    font-size: 2em;
+    font-family: 'Calistoga', cursive;
+    color: rgb(255, 0, 179);
+  }
   
   &:hover {
     width: 20vw;
@@ -17,71 +24,63 @@
       display: none;
     }
 
-    div {
+    .Links {
       display: flex;
       flex-direction: column;
       justify-content: space-around;
       align-items: center;
       opacity: 1;
-    }
 
-    a {
-      opacity: 1;
-    }
-  }
-
-  h2 {
-    transform: rotate(270deg);
-    font-size: 2em;
-    font-family: 'Calistoga', cursive;
-    color: rgb(255, 0, 179);
-  }
-
-  @keyframes yellower {
-    0% {color: rgb(255, 0, 179);}
-    50% {color: rgb(233, 255, 34);}
-    100% {color: rgb(255, 0, 179);}
-  }
-  
-  .Yellower {
-    animation: yellower 4s ease-in-out;
-  }
-
-  div {
-    height: 100%;
-    width: 100%;
-    padding: 0;
-    overflow: hidden;
-    opacity: 0;
-
-    a {
-      opacity: 0;
-      transition: opacity .5s ease-in-out;
-      transition-delay: .2s;
-      width: 75%;
-      display: flex;
-      justify-content: center;
-      text-align: center;
-      align-content: center;
-      font-family: 'Montserrat', sans-serif;
-      font-size: 1.5em;
-      text-decoration: none;
-      color: black;
-  
-      &:hover {
-        transform: scale(1.1);
+      a {
+        opacity: 1;
       }
-  
     }
-    .selected {
-      color: blue;
+  }
+}
+
+.Links {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  overflow: hidden;
+  opacity: 0;
+
+  a {
+    opacity: 0;
+    transition: opacity .5s ease-in-out;
+    transition-delay: .2s;
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5em;
+    text-decoration: none;
+    color: black;
+
+    &:hover {
+      transform: scale(1.1);
     }
   }
 
+  .Selected {
+    color: blue;
+  }
+}
+
+@keyframes yellower {
+  0% {color: rgb(255, 0, 179);}
+  50% {color: rgb(233, 255, 34);}
+  100% {color: rgb(255, 0, 179);}
+}
+
+.Yellower {
+  animation: yellower 4s ease-in-out;
 }
 
 @media screen and (max-width: 600px) {
-  .sidebar {
+  .Sidebar {
     display: none;
   }
 }

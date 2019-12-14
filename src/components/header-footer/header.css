@@ -79,9 +79,9 @@
     font-size: 1.5em;
     text-decoration: none;
     color: black;
-
   }
-  .selected {
+
+  .Selected {
     color: blue;
   }
 }
@@ -122,9 +122,6 @@
     right: 6vw;
   }
 }
-
-
-
 
 @media screen and (max-width: 600px) {
   .Header {
