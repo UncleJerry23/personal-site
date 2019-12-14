@@ -8,7 +8,7 @@ import { useDispatch } from 'react-redux';
 import styles from './app.css';
 import SideBar from './sidebar/SideBar';
 import AboutMe from './main/AboutMe';
-import Header from './header-footer/Header';
+import Header from './header/Header';
 import Projects from './main/Projects';
 import AboutSite from './main/AboutSite';
 import Why from './main/Why';

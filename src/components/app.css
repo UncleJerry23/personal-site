@@ -7,10 +7,7 @@
   width: 100vw;
   display: grid;
   grid-template-columns: 95% 1fr;
-  background: linear-gradient(
-    rgba(0, 0, 0, 0.3), 
-    rgba(0, 0, 0, 0.3)
-  ),url('https://i.imgur.com/cWpw58I.jpg');
+  background: url('https://i.imgur.com/cWpw58I.jpg');
   background-size: cover;
   background-repeat: no-repeat;
 }

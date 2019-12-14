@@ -27,8 +27,11 @@ const AboutSite = () => {
           <div>
             <p>The projects page information is pulled from the gitHub api to keep my starred repositories up to date.</p>
           </div>
-          <div>
+          <div className={styles.SideBar}>
             <p>The sidebar menu was styled using vanilla JS and CSS</p>
+          </div>
+          <div className={styles.Burger}>
+            <p>The burger menu was styled using vanilla JS and CSS</p>
           </div>
           <div>
             <p>It is deployed using Amazon&rsquo;s AWS S3 bucket</p>

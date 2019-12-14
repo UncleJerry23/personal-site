@@ -1,11 +1,11 @@
+@import '../vars.css';
+
 .Contact {
   display: grid;
   grid-auto-columns: 10% 1fr;
   height: 100%;
   width: 100%;
 }
-
-
 
 .Icons {
   display: flex;
@@ -28,7 +28,7 @@
   }
 
   img {
-    height: 5em;
+    height: var(--icon-size);
   }
 }
 
@@ -37,11 +37,10 @@
   grid-column-start: 2;
   width: 100%;
   height: 100%;
-  color: rgb(166, 255, 218);
-  text-shadow: 1px 1px rgb(42, 65, 55);
+  color: var(--light-green-text);
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
 
   div {
     height: 40%;
@@ -53,11 +52,12 @@
   }
 
   p {
-    font-size: 2em;
+    font-size: var(--paragraph-font-size);
     padding: 1em;
-    background: rgba(21, 24, 21, 0.829);
-    border-radius: 1em;
+    background: var(--dark-green-background);
+    border-radius: var(--border-radius);
     margin: 1em;
+    font-family: var(--paragraph-font);
   }
 }
 
@@ -86,18 +86,10 @@
     div {
       height: 40%;
       width: 80%;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
     }
   
     p {
       font-size: 1.3em;
-      padding: 1em;
-      background: rgba(21, 24, 21, 0.829);
-      border-radius: 1em;
-      margin: 1em;
     }
   }
 }

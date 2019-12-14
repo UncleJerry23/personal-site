@@ -9,16 +9,16 @@ const Contact = () => {
   return (
     <div className={styles.Contact}>
       <section className={styles.Icons}>
-        <a href="https://github.com/UncleJerry23" target="blank">
+        <a href="https://github.com/UncleJerry23" target="blank" rel="noopener noreferrer">
           <img src={github} />
         </a>
-        <a href="https://www.linkedin.com/in/jaredmyhrberg/" target="blank">
+        <a href="https://www.linkedin.com/in/jaredmyhrberg/" target="blank" rel="noopener noreferrer">
           <img src={linkedin} />
         </a>
-        <a href="mailto:jared.myhrberg@gmail.com" target="blank">
+        <a href="mailto:jared.myhrberg@gmail.com" target="blank" rel="noopener noreferrer">
           <img src={email} />
         </a>
-        <a href="https://drive.google.com/open?id=1mfSk1e2lTASVQ1rfr59qsNAjkAOIB2lA" target="blank">
+        <a href="https://drive.google.com/open?id=1mfSk1e2lTASVQ1rfr59qsNAjkAOIB2lA" target="blank" rel="noopener noreferrer">
           <img src={resume} />
         </a>
       </section>
