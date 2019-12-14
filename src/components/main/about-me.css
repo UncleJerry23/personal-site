@@ -42,10 +42,10 @@
 @media screen and (max-width: 600px) {
   .About-Me {
     section {
-      width: 70%;
+      width: 70vw;
       height: 11em;
+      margin-top: 1.5em;
       border: 1em solid var(--dark-green-background);
-
 
       div {
         font-size: 1em;

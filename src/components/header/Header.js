@@ -19,7 +19,7 @@ const Header = ({ history }) => {
     <div className={styles['Header-Container']}>
       <header className={styles.Header} >
         <Link to="/">
-          <h1>jared-Myhrberg</h1>
+          <h1>jared-myhrberg</h1>
         </Link>
         <h3>&gt; {header[history.location.pathname.slice(1)]}</h3>
       </header>

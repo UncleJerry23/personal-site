@@ -9,8 +9,11 @@
 
   --icon-size: 4em;
 
-  --jared-font: 'Slabo';
-  --title-font: 'Lobster';
-  --paragraph-font: 'Oswald';
+  --jared-font: 'Oswald';
+  --title-font: 'Oswald';
+  --paragraph-font: 'Quattrocento';
   --paragraph-font-size: 1.8em;
+  --paragraph-font-size-mobile: 1.1em;
+  
+  --paragraph-padding: 1em;
 }

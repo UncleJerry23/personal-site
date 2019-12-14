@@ -53,7 +53,7 @@
 
   p {
     font-size: var(--paragraph-font-size);
-    padding: 1em;
+    padding: var(--paragraph-padding);
     background: var(--dark-green-background);
     border-radius: var(--border-radius);
     margin: 1em;
@@ -89,7 +89,7 @@
     }
   
     p {
-      font-size: 1.3em;
+      font-size: var(--paragraph-font-size-mobile);
     }
   }
 }
