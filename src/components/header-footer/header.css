@@ -12,132 +12,31 @@
 .Header-Container {
   display: flex;
   justify-content: space-between;
-}
 
-.Header {
-  display: flex;
-  flex-direction: column;
-  width: fit-content;
-
-  a {
-    text-decoration: none;
-  }
-
-  h1 {
-    color: rgb(255, 255, 255);
-    font-family: 'Open Sans', sans-serif;
-    font-size: 2.5em;
-    margin-left: .6em;
-
-    &:hover {
-      animation: rainbow-color 5s linear infinite;
-    }
-  }
-
-  h3 {
-    margin-left: 2em;
-    font-size: 1.5em;
-    color: rgb(187, 187, 187);
-  }
-}
-
-.Burger {
-  display: none;
-  margin: 1em;
-  background: rgba(49, 49, 49, 0.568);
-  padding: .1em;
-}
-
-.Burger-Slice {
-  height: .3em;
-  width: 2em;
-  background: rgb(255, 0, 179);
-  margin: .1em;
-}
-
-.Menu {
-  position: absolute;
-  background: yellow;
-  height: 90vh;
-  width: 70vw;
-  bottom: 0;
-  right: 0;
-  animation: openMenu .4s ease-in-out;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-  z-index: 1;
-
-  a {
-    width: 75%;
+  header {
     display: flex;
-    justify-content: center;
-    text-align: center;
-    align-content: center;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.5em;
-    text-decoration: none;
-    color: black;
-  }
+    flex-direction: column;
+    width: fit-content;
 
-  .Selected {
-    color: blue;
-  }
-}
+    a {
+      text-decoration: none;
+    }
 
-.Pointer {
-  position: absolute;
-  top: 9vh;
-  right: 6vw;
-  background: yellow;
-  height: 1em;
-  width: 1em;
-  transform: rotate(45deg);
-  animation: showArrow .4s ease-in-out;
-}
-
-.Close {
-  display: none;
-}
-
-@keyframes openMenu {
-  0% {
-    width: 70vw;
-    bottom: 0;
-    right: -80vw;
-  }
-  100% {
-    width: 70vw;
-    bottom: 0;
-    right: 0;
-  }
-}
-
-@keyframes showArrow {
-  0% {
-    right: -70vw;
-  }
-  100% {
-    right: 6vw;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .Header {
     h1 {
-      font-size: 2em;
+      color: rgb(255, 255, 255);
+      font-family: 'Open Sans', sans-serif;
+      font-size: 2.5em;
+      margin-left: .6em;
+
+      &:hover {
+        animation: rainbow-color 5s linear infinite;
+      }
     }
 
     h3 {
-      margin-left: 1.3em;
+      margin-left: 2em;
+      font-size: 1.5em;
+      color: rgb(187, 187, 187);
     }
-  }
-
-  .Burger {
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    justify-content: center;
   }
 }
