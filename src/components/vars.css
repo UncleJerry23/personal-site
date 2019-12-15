@@ -1,7 +1,7 @@
 :root {
   --pink: rgb(255, 0, 179);
   --yellow: rgb(233, 255, 34);
-  --selected-blue: blue;
+  --selected-blue: rgb(255, 0, 179);
   --light-green-text: rgb(166, 255, 218);
 
   --dark-green-background: rgb(21, 24, 21);

@@ -26,7 +26,6 @@ const Burger = ({ history }) => {
         <Link onClick={close} id="about-site" to="/about-site">About this site</Link>
         <Link onClick={close} id="why" to="/why">WHY IS THIS ON THE RIGHT SIDE OF THE PAGE?!?!?</Link>
         <Link onClick={close} id="projects" to="/projects">Projects</Link>
-        <Link onClick={close} id="contact" to="/contact">Contact Info</Link>
       </div>
 
       <div className={isOpen ? styles.Pointer : styles.Close}></div>

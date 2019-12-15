@@ -5,6 +5,5 @@ const error = (state, action) => ({ ...state, loading: false, error: action.payl
 export const thoughtActions = {
   GET_STARRED_REPOS: (state, action) => success(state, action, 'projects'),
   GET_STARRED_REPOS_PENDING: (state) => pending(state),
-  GET_STARRED_REPOS_ERROR: (state, action) => error(state, action),
-  DID_VISIT: (state, action) => success(state, action, 'didVisit'),
+  GET_STARRED_REPOS_ERROR: (state, action) => error(state, action)
 };

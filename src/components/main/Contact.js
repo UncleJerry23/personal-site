@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './contact.css';
 import github from '../../../assets/github.png';
 import email from '../../../assets/mail.png';
-import linkedin from '../../../assets/linkedin.png';
+import linkedin from '../../../assets/white-linkedin.png';
 import resume from '../../../assets/resume.png';
 
 const Contact = () => {

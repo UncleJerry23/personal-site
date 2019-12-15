@@ -66,18 +66,9 @@
   }
 
   .Selected {
-    color: blue;
+    color: var(--selected-blue);
+    text-shadow: 1px 1px black;
   }
-}
-
-@keyframes yellower {
-  0% {color: rgb(255, 0, 179);}
-  50% {color: rgb(233, 255, 34);}
-  100% {color: rgb(255, 0, 179);}
-}
-
-.Yellower {
-  animation: yellower 4s ease-in-out;
 }
 
 @media screen and (max-width: 600px) {

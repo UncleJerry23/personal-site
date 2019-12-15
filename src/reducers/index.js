@@ -4,8 +4,7 @@ import { thoughtActions } from './reducerHelpers';
 const initialState = {
   projects: [],
   err: {},
-  loading: false,
-  didVisit: false
+  loading: false
 };
 
 export default function reducer(state = initialState, action) {
