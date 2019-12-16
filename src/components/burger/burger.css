@@ -15,9 +15,9 @@
 }
 
 .Menu {
+  background: var(--yellow);
   position: absolute;
-  background: yellow;
-  height: 90vh;
+  top: 12%;
   width: 70vw;
   bottom: 0;
   right: 0;
@@ -48,8 +48,8 @@
 
 .Pointer {
   position: absolute;
-  top: 9vh;
-  right: 6vw;
+  top: 11%;
+  right: 1.5em;
   background: var(--yellow);
   height: 1em;
   width: 1em;

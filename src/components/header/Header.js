@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Link, withRouter } from 'react-router-dom';
 import styles from './header.css';
-import Burger from './Burger';
+import Burger from '../burger/Burger';
 
 const header = {
   ['']: 'Home',

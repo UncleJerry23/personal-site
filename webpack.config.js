@@ -10,11 +10,12 @@ module.exports = {
     publicPath: '/'
   },
   devServer: {
+    host: '192.168.0.18',
     port: 7890,
     historyApiFallback: true
   },
   plugins: [
-    new HtmlPlugin({ template: './src/index.html' }),
+    new HtmlPlugin({ template: './src/index.html', favicon: './src/favicon.png' }),
     new CleanWebpackPlugin()
   ],
   module: {

@@ -10,16 +10,16 @@ const Contact = () => {
   return (
     <div className={styles.Contact}>
       <section className={styles.Icons}>
-        <a href="https://github.com/UncleJerry23" target="blank" rel="noopener noreferrer">
+        <a href="https://github.com/UncleJerry23" target="blank" rel="noopener noreferrer" alt="github-profile">
           <img src={github} />
         </a>
-        <a href="https://www.linkedin.com/in/jaredmyhrberg/" target="blank" rel="noopener noreferrer">
+        <a href="https://www.linkedin.com/in/jaredmyhrberg/" target="blank" rel="noopener noreferrer" alt="linkedin-profile">
           <img src={linkedin} />
         </a>
-        <a href="mailto:jared.myhrberg@gmail.com" target="blank" rel="noopener noreferrer">
+        <a href="mailto:jared.myhrberg@gmail.com" target="blank" rel="noopener noreferrer" alt="email-link">
           <img src={email} />
         </a>
-        <a href="https://drive.google.com/open?id=1mfSk1e2lTASVQ1rfr59qsNAjkAOIB2lA" target="blank" rel="noopener noreferrer">
+        <a href="https://drive.google.com/open?id=1mfSk1e2lTASVQ1rfr59qsNAjkAOIB2lA" target="blank" rel="noopener noreferrer" alt="resume-link">
           <img src={resume} />
         </a>
       </section>
@@ -30,7 +30,7 @@ const Contact = () => {
         </div>
 
         <div>
-          <img src={me}/>
+          <img src={me} alt="profile-picture"/>
         </div>
 
         <div>
@@ -39,7 +39,7 @@ const Contact = () => {
         </div>
 
         <div>
-          <p>An avid life long learner, starting a career in software development. I get excited about finding simple solutions to complex problems and gain energy working on energetic and open-minded teams! I'm looking for a challenging career in technology that makes a positive impact on the world.</p>
+          <p>An avid life long learner, starting a career in software development. I get excited about finding simple solutions to complex problems and gain energy working on energetic and open-minded teams! I&lsquo;m looking for a challenging career in technology that makes a positive impact on the world.</p>
         </div>
 
         <div>
