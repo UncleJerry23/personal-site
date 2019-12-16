@@ -1,18 +1,28 @@
 :root {
-  --pink: rgb(255, 0, 179);
-  --yellow: rgb(233, 255, 34);
-  --selected-blue: rgb(255, 0, 179);
-  --light-green-text: rgb(166, 255, 218);
+  --header-height: 15%;
+  --main-height: 85%;
 
-  --dark-green-background: rgb(21, 24, 21);
+
+  --pink: rgb(199, 26, 127);
+  --yellow: #FDDD0E;
+  --light-green-text: #89C6A7;
+
+  --dark-green-background: rgba(21, 24, 21, 1);
   --border-radius: .2em;
 
   --icon-size: 4em;
+  --icon-left: 1em;
+  --icon-top: 1em;
+  --icon-margin: 1em;
+  --icon-transform: scaleY(1.1);
 
-  --jared-font: 'Oswald';
+  --detail-width: 55vw;
+  --detail-margin: 1em;
+  --detail-margin-mobile: .5em;
+
   --title-font: 'Oswald';
   --paragraph-font: 'Quattrocento';
-  --paragraph-font-size: 1.8em;
+  --paragraph-font-size: 1.2em;
   --paragraph-font-size-mobile: 1.1em;
   
   --paragraph-padding: 1em;

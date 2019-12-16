@@ -1,9 +1,10 @@
 import React from 'react';
 import styles from './contact.css';
-import github from '../../../assets/github.png';
-import email from '../../../assets/mail.png';
+import github from '../../../assets/github-white.png';
+import email from '../../../assets/mail-white.png';
 import linkedin from '../../../assets/white-linkedin.png';
 import resume from '../../../assets/resume.png';
+import me from '../../../assets/me.jpg';
 
 const Contact = () => {
   return (
@@ -25,6 +26,7 @@ const Contact = () => {
 
       <section className={styles.Details}>
         <div>
+          <img src={me}/>
           <p>
           If you&rsquo;d like to hire me for a software position, commission a rad woodworking project or for any other reason please feel free to email me or message me on LinkedIn by using the links to the left.
           </p>

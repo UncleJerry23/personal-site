@@ -1,7 +1,7 @@
 .Sidebar {
   height: 100vh;
   width: 5vw;
-  background: rgb(26, 26, 26);
+  background: var(--dark-green-background);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -12,13 +12,13 @@
     transform: rotate(270deg);
     font-size: 2em;
     font-family: var(--title-font);
-    color: rgb(255, 0, 179);
+    color: var(--pink);
   }
   
   &:hover {
     width: 20vw;
     transform: translate(calc(-20vw + 5vw));
-    background: rgb(216, 194, 0);
+    background: var(--yellow);
 
     h2 {
       display: none;
@@ -66,8 +66,7 @@
   }
 
   .Selected {
-    color: var(--selected-blue);
-    text-shadow: 1px 1px black;
+    color: var(--light-green-text);
   }
 }
 

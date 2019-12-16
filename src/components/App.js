@@ -22,11 +22,11 @@ export default function App() {
   return (
     <section className={styles.app} >
       <Router >
+
         <section className={styles.Left}>
           <div className={styles.Header}>
             <Header/>
           </div>
-        
           <div className={styles.Main}>
             <Switch>
               <Route exact path="/" component={Contact} />
@@ -36,12 +36,12 @@ export default function App() {
               <Route exact path="/projects" component={Projects} />
             </Switch>
           </div>
-
         </section>
 
         <div className={styles.Sidebar}>
           <SideBar />
         </div>
+        
       </Router>
     </section>
   );

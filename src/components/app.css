@@ -7,7 +7,7 @@
   width: 100vw;
   display: grid;
   grid-template-columns: 95% 1fr;
-  background: url('https://i.imgur.com/cWpw58I.jpg');
+  background: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url('https://i.imgur.com/cWpw58I.jpg');
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -19,17 +19,18 @@
 .Left {
   height: 100vh;
   grid-row-start: 1;
-  display: grid;
-  grid-template-rows: 13% 1fr;
-  overflow: scroll;
+  display: flex;
+  flex-direction: column;
 }
 
 .Header {
-  grid-row-start: 1;
+  height: var(--header-height);
+  display: flex;
+  align-items: center;
 }
 
 .Main {
-  grid-row-start: 2;
+  height: var(--main-height);
   width: 100%;
 }
 
@@ -43,10 +44,6 @@
     flex-direction: column;
     background-image: url('https://i.imgur.com/cWpw58I.jpg');
     background-position-x: 40%;
-  }
-  .Left {
-    display: grid;
-    grid-template-rows: 12% 1fr;
   }
 }
 

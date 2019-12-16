@@ -41,7 +41,7 @@
   }
 
   .Selected {
-    color: var(--selected-blue);
+    color: var(--light-green-text);
     text-shadow: 1px 1px black;
   }
 }
