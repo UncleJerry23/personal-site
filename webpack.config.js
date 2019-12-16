@@ -10,7 +10,7 @@ module.exports = {
     publicPath: '/'
   },
   devServer: {
-    host: '192.168.0.18',
+    host: '0.0.0.0',
     port: 7890,
     historyApiFallback: true
   },
