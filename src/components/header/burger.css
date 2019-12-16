@@ -9,7 +9,7 @@
 .Burger-Slice {
   height: .3em;
   width: 2em;
-  background: rgb(255, 0, 179);
+  background: var(--light-green);
   margin: .1em;
   border-radius: 1em;
 }
@@ -41,7 +41,7 @@
   }
 
   .Selected {
-    color: var(--light-green-text);
+    color: var(--light-green);
     text-shadow: 1px 1px black;
   }
 }
@@ -50,7 +50,7 @@
   position: absolute;
   top: 9vh;
   right: 6vw;
-  background: yellow;
+  background: var(--yellow);
   height: 1em;
   width: 1em;
   transform: rotate(45deg);

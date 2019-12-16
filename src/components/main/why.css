@@ -12,7 +12,7 @@
     background: var(--dark-green-background);
     border-radius: var(--border-radius);
     padding: var(--paragraph-padding);
-    color: var(--light-green-text);
+    color: var(--light-green);
     font-size: var(--paragraph-font-size);
     font-family: var(--paragraph-font);
 
@@ -43,7 +43,7 @@
     align-items: center;
 
     a{
-      color: var(--light-green-text);
+      color: var(--light-green);
     }
   }
   .SideBar {

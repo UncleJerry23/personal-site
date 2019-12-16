@@ -5,7 +5,9 @@
 
   --pink: rgb(199, 26, 127);
   --yellow: #FDDD0E;
-  --light-green-text: #89C6A7;
+  --light-green: #89C6A7;
+  --dark-green: #89C6A7;
+  --raisin-black: #252323;
 
   --dark-green-background: rgba(21, 24, 21, 1);
   --border-radius: .2em;

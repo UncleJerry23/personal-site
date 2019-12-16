@@ -39,7 +39,7 @@
     h3 {
       margin-left: 2em;
       font-size: 1.5em;
-      color: var(--light-green-text);
+      color: var(--light-green);
       font-family: var(--title-font);
     }
   }

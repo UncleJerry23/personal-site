@@ -37,7 +37,7 @@
 .Details{
   height: 80%;
   width: var(--detail-width);
-  color: var(--light-green-text);
+  color: var(--light-green);
   display: flex;
   flex-direction: column;
   align-items: center;

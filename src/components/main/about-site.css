@@ -43,7 +43,7 @@
       border-radius: var(--border-radius);
       margin: var(--detail-margin);
       padding: var(--paragraph-padding);
-      color: var(--light-green-text);
+      color: var(--light-green);
       font-size: var(--paragraph-font-size);
       font-family: var(--paragraph-font);
     }
