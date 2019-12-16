@@ -21,11 +21,11 @@ const Burger = ({ history }) => {
       </section>
 
       <div className={isOpen ? styles.Menu : styles.Close}>
-        <Link onClick={close} id="home" to="/">Home</Link>
-        <Link onClick={close} id="about-me" to="/about-me">About Me</Link>
-        <Link onClick={close} id="about-site" to="/about-site">About this site</Link>
-        <Link onClick={close} id="why" to="/why">WHY IS THIS ON THE RIGHT SIDE OF THE PAGE?!?!?</Link>
-        <Link onClick={close} id="projects" to="/projects">Projects</Link>
+        <Link onClick={close} id="home-burger" to="/">Home</Link>
+        <Link onClick={close} id="about-me-burger" to="/about-me">About Me</Link>
+        <Link onClick={close} id="about-site-burger" to="/about-site">About this site</Link>
+        <Link onClick={close} id="why-burger" to="/why">WHY IS THIS ON THE RIGHT SIDE OF THE PAGE?!?!?</Link>
+        <Link onClick={close} id="projects-burger" to="/projects">Projects</Link>
       </div>
 
       <div className={isOpen ? styles.Pointer : styles.Close}></div>

@@ -18,7 +18,7 @@ const Projects = () => {
           <li key={i.id}>
 
             <section className={styles['Image-Container']}>
-              <img src={images[i.name] || 'https://i.imgur.com/IWhPTlk.jpg'} />
+              <img src={images[i.name] || 'https://i.imgur.com/IWhPTlk.jpg'} alt="logo"/>
             </section>
 
             <section className={styles['Details-Container']}>

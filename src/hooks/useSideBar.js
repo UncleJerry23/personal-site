@@ -9,5 +9,6 @@ export const useSideBar = (styles, history) => {
     const old = document.querySelectorAll(`.${styles.Selected}`);
     old.forEach(i => i.className = '');
     document.querySelectorAll(`#${selected}`).forEach(i => i.className = styles.Selected);
+    document.querySelectorAll(`#${selected}-burger`).forEach(i => i.className = styles.Selected);
   });
 };
