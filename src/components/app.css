@@ -45,6 +45,12 @@
     background-image: url('https://i.imgur.com/cWpw58I.jpg');
     background-position-x: 40%;
   }
+  .Header {
+    height: 12%;
+  }
+  .Main {
+    height: 88%;
+  }
 }
 
 

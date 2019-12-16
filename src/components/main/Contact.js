@@ -26,17 +26,35 @@ const Contact = () => {
 
       <section className={styles.Details}>
         <div>
-          <img src={me}/>
-          <p>
-          If you&rsquo;d like to hire me for a software position, commission a rad woodworking project or for any other reason please feel free to email me or message me on LinkedIn by using the links to the left.
-          </p>
-          <p>
-          Thanks for stopping by!
-          </p>
+          <h1>This IS the droid you&rsquo;er looking for...</h1>
         </div>
+
+        <div>
+          <img src={me}/>
+        </div>
+
+        <div>
+          <h2>Full-Stack Software Developer</h2>
+          <h3>he / him</h3>
+        </div>
+
+        <div>
+          <p>An avid life long learner, starting a career in software development. I get excited about finding simple solutions to complex problems and gain energy working on energetic and open-minded teams! I'm looking for a challenging career in technology that makes a positive impact on the world.</p>
+        </div>
+
+        <div>
+          <p>If you&rsquo;d like to hire me for a software position, commission a rad woodworking project or for any other reason please feel free to email me or message me on LinkedIn by using the links to the left.</p>
+        </div>
+        <div>
+
+          <p>Thanks for stopping by!</p>
+        </div>
+
       </section>
     </div>
   );
 };
 
 export default Contact;
+
+

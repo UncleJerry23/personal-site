@@ -7,11 +7,13 @@
   overflow: scroll;
   height: 100%;
   width: 100%;
+  overflow: scroll;
 }
 
 .Icons {
   position: absolute;
   left: var(--icon-left);
+  top: 30%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -33,33 +35,41 @@
 
 
 .Details{
+  height: 80%;
   width: var(--detail-width);
-  height: 100%;
   color: var(--light-green-text);
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
-
-  img {
-    height: 20em;
-  }
-
+  
   div {
-    height: 40%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    width: 100%;
+    background: var(--dark-green-background);
+    margin: .3em;
+    border-radius: var(--border-radius);
+    text-align: center;
+    padding: 1em;
   }
 
-  p {
-    font-size: var(--paragraph-font-size);
-    padding: var(--paragraph-padding);
-    background: var(--dark-green-background);
-    border-radius: var(--border-radius);
-    margin: 1em;
+  h1 {
+    font-size: 1.5em;
+    font-family: var(--title-font);
+  }
+  img {
+    width: 17em;
+    padding: 0;
+  }
+  h2 {
+    font-family: var(--title-font);
+  }
+  h3 {
     font-family: var(--paragraph-font);
   }
+  p {
+    font-size: var(--paragraph-font-size);
+    font-family: var(--paragraph-font);
+  }
+
 }
 
 
@@ -70,11 +80,11 @@
     align-items: center;
     height: 100%;
     width: 100%;
+    overflow: scroll;
   }
 
   .Icons {
-    position: absolute;
-    display: flex;
+    left: -.1em;
 
     a {
       margin: 0;
@@ -88,8 +98,14 @@
 
   .Details{
     div {
-      height: 40%;
-      width: 80%;
+      height: 100%;
+      width: 100%;
+      position: relative;
+      left: 2em;
+
+      img {
+        width: 10em;
+      }
     }
   
     p {
