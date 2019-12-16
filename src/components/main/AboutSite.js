@@ -1,10 +1,5 @@
 import React from 'react';
 import styles from './about-site.css';
-import css from '../../../assets/css-white.png';
-import react from '../../../assets/react-white.png';
-import github from '../../../assets/github-white.png';
-import js from '../../../assets/js-white.png';
-import aws from '../../../assets/aws-white.png';
 
 const AboutSite = () => {
   return (

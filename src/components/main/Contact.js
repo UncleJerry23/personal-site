@@ -1,8 +1,8 @@
 import React from 'react';
 import styles from './contact.css';
-import github from '../../../assets/github-white.png';
-import email from '../../../assets/mail-white.png';
-import linkedin from '../../../assets/white-linkedin.png';
+import github from '../../../assets/github.png';
+import email from '../../../assets/mail.png';
+import linkedin from '../../../assets/linkedin.png';
 import resume from '../../../assets/resume.png';
 import me from '../../../assets/me.jpg';
 
