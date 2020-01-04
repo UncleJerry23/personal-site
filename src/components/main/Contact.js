@@ -19,7 +19,7 @@ const Contact = () => {
         <a href="mailto:jared.myhrberg@gmail.com" target="blank" rel="noopener noreferrer" alt="email-link">
           <img src={email} />
         </a>
-        <a href="https://drive.google.com/open?id=1YLdVa923GDL84qUnldu_KIG_pSNTtFaj" target="blank" rel="noopener noreferrer" alt="resume-link">
+        <a href="https://drive.google.com/open?id=1J__L15X56NOhAaT-TR28iFSCUTpkdYDR" target="blank" rel="noopener noreferrer" alt="resume-link">
           <img src={resume} />
         </a>
       </section>
