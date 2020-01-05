@@ -8,7 +8,7 @@ const AboutSite = () => {
       <section className={styles.Details}>
 
         <section>
-          <p>This site was written in React and utilizes modern react hooks</p>
+          <p>This site was written in React, utilizes modern react hooks and uses Redux for state management.</p>
           <p>The projects page information is pulled from the gitHub api to keep my starred repositories up to date.</p>
           <p className={styles.SideBar}>The sidebar menu was styled using vanilla JS and CSS</p>
           <p className={styles.Burger}>The burger menu was styled using vanilla JS and CSS</p>
