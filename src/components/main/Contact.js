@@ -26,7 +26,7 @@ const Contact = () => {
 
       <section className={styles.Details}>
         <div>
-          <h1>This IS the droid you&rsquo;er looking for...</h1>
+          <h1>This IS the droid you&rsquo;re looking for...</h1>
         </div>
 
         <div>
