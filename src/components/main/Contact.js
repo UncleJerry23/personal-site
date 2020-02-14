@@ -5,6 +5,7 @@ import email from '../../../assets/mail.png';
 import linkedin from '../../../assets/linkedin.png';
 import resume from '../../../assets/resume.png';
 import me from '../../../assets/me.jpg';
+import twitter from '../../../assets/twitter.png';
 
 const Contact = () => {
   return (
@@ -21,6 +22,9 @@ const Contact = () => {
         </a>
         <a href="https://drive.google.com/open?id=1fYGPc-GwNNCTgnWdXiVZsLmBrYQcqxRB" target="blank" rel="noopener noreferrer" alt="resume-link">
           <img src={resume} />
+        </a>
+        <a href="https://twitter.com/unclejerry23" target="blank" rel="noopener noreferrer" alt="twitter-link">
+          <img src={twitter} />
         </a>
       </section>
 
